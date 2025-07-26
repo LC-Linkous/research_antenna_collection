@@ -36,9 +36,9 @@ These antennas are modified oval patched on double-sided copper FR4 with permitt
 <div align="center">
 <table>
   <tr>
-    <td align="center"><img src="./media/cat_antennas/2400MHz_6000MHz.png" height="200"></td>
-    <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_square.png" height="200"></td>
-    <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_round.png" height="200"></td>
+    <td align="center"><img src="./media/cat_antennas/2400MHz_6000MHz.png" height="250"></td>
+    <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_square.png" height="250"></td>
+    <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_round.png" height="250"></td>
   </tr>
   <tr>
     <td align="center">S11 of 2.4 GHz and 6 GHz Design</td>
@@ -57,6 +57,24 @@ The center and the third plots are designed for dual-band 5 GHz and 6 GHz freque
 
 On the right, a round ground plane is used. The conductor design is the same as the one used on the center plot, and both operate at 5 GHz and 6 GHz, but the round substrate and ground plane combination has a notable improvement in both bands. Moving the probe location slightly in simulation can be used to adjust the return loss for both bands, or to favor one over the other.
 
+
+
+
+
+
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img src="./media/cat_antennas/old_sim_dual_band_gain.png" height="350"></td>
+    <td align="center"><img src="./media/cat_antennas/old_measured.png" height="350"></td>
+  </tr>
+  <tr>
+    <td align="center">Simulated Dual-band Gain and S11 Summary from Literature[2]</td>
+    <td align="center">Measured Dual-band Gain and S11 Summary from Literature[2]</td>
+  </tr>
+</table>
+</div>
 
 
 
