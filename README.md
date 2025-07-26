@@ -18,7 +18,7 @@ Collected measurements and designs for antennas that have appeared in papers
 
 
 
-These antennas are modified oval patch antennas on FR4 with permittivity of ~4.4. They are designed to operate at two independent and tunable frequencies. 
+These antennas are modified oval patched on double-sided copper FR4 with permittivity of ~4.4. They are designed to operate at two independent and tunable frequencies. 
 
 **General design summary:**
 * Probe-fed design with full copper ground plane
@@ -33,12 +33,13 @@ These antennas are modified oval patch antennas on FR4 with permittivity of ~4.4
 
 
 
-<p>
 
-|<img src="./media/5gefield.gif" height="150" >|<img src="./media/6gefield.gif" height="150" >|
+
+
+<p align="center">
+|<img src="./media/5gefield.gif" height="200" >|<img src="./media/6gefield.gif" height="200" >|
 |:-:|:-:|
 |Electric Field, 5 GHz Band |Electric Field, 6 GHz Band|
-
 </p>
 
 
