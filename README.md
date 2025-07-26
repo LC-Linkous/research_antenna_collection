@@ -13,7 +13,7 @@ Collected measurements and designs for antennas that have appeared in papers
 ## Cat Antennas
 
 <p align="center">
- <img src="./media/CatAntenna_2.png" height="300" >
+ <img src="./media/cat_antennas/CatAntenna_2.png" height="300" >
 </p>
 
 
@@ -33,21 +33,31 @@ These antennas are modified oval patched on double-sided copper FR4 with permitt
 
 
 
-
-
-
 <div align="center">
 <table>
   <tr>
-    <td align="center"><img src="./media/5gefield.gif" height="200"></td>
-    <td align="center"><img src="./media/6gefield.gif" height="200"></td>
+    <td align="center"><img src="./media/cat_antennas/2400MHz_6000MHz.png" height="200"></td>
+    <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_square.png" height="200"></td>
+    <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_round.png" height="200"></td>
   </tr>
   <tr>
-    <td align="center">Electric Field, 5 GHz Band</td>
-    <td align="center">Electric Field, 6 GHz Band</td>
+    <td align="center">S11 of 2.4 GHz and 6 GHz Design</td>
+    <td align="center">S11 of 5 GHz and 6 GHz Design, Square Ground Plane</td>
+    <td align="center">S11 of 5 GHz and 6 GHz Design, Round Ground Plane</td>
   </tr>
 </table>
 </div>
+
+
+All designs show strong consistency between samples. For comparison purposes, all samples were measured from 1 GHz to 8 GHz on a Keysight N5227B PNA Network Analyzer on the same 12-port. In the provided sample .csv files, ports 3 and 4 were used for measurements. S11 in this example is S33.  
+
+In the plot above on the left, the 2.4 GHz and 6 GHz frequencies are controllable and were designed in simulation. The additional resonances at 4.7 GHz and 7.9 GHz are not directly controllable, but are consistent. 
+
+The center and the third plots are designed for dual-band 5 GHz and 6 GHz frequencies. The designs differ only in the shape of the substrate and ground plane (the ground plane fully covers the back of the substrate). The center plot uses the square ground plane; this design notably has a weaker lower frequency, which is consistent across the samples. This was noticed with the smaller cut of this particular design. The performance is improved with one of 2 changes: 1. extending the ground plane by at least several millimeters, OR 2. moving the probe location slightly to account for the smaller ground plane. 
+
+On the right, a round ground plane is used. The conductor design is the same as the one used on the center plot, and both operate at 5 GHz and 6 GHz, but the round substrate and ground plane combination has a notable improvement in both bands. Moving the probe location slightly in simulation can be used to adjust the return loss for both bands, or to favor one over the other.
+
+
 
 
 
