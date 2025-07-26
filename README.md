@@ -36,12 +36,18 @@ These antennas are modified oval patched on double-sided copper FR4 with permitt
 
 
 
-<p align="center">
-|<img src="./media/5gefield.gif" height="200" >|<img src="./media/6gefield.gif" height="200" >|
-|:-:|:-:|
-|Electric Field, 5 GHz Band |Electric Field, 6 GHz Band|
-</p>
-
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img src="./media/5gefield.gif" height="200"></td>
+    <td align="center"><img src="./media/6gefield.gif" height="200"></td>
+  </tr>
+  <tr>
+    <td align="center">Electric Field, 5 GHz Band</td>
+    <td align="center">Electric Field, 6 GHz Band</td>
+  </tr>
+</table>
+</div>
 
 
 
