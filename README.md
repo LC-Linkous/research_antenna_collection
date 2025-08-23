@@ -83,7 +83,7 @@ Gain measurement of the newly milled antennas is scheduled for late August in or
 
 **Build of materials & assembly suggestions:**
 
-The .DXF file for several of these designs is included in the `dxf_files\cat_antennas` file.
+The .DXF files for several of these designs is included in the `dxf_files\cat_antennas` directory.
 
 
 * FR4
@@ -100,7 +100,7 @@ The .DXF file for several of these designs is included in the `dxf_files\cat_ant
   * This drill bit is used to drill the ground plane away from the center of the SMA connector so that there is no contact between the center pin and ground. The copper can be removed by hand, but the drill is fast and consistent. Do NOT drill deeply into the FR4.
   * When selecting a drill bit, other sizes can be used as long as the ground (outside) of the SMA can be soldered to the ground plane of the antenna. 
 * Lead solder
-  * Any brand works. Lead will flow better and attach to the copper easier
+  * Recommended, Any brand works. Lead solder will flow better without additional flux and attach to the copper easier
 * A pair of side/diagonal cutters
   * Any brand works as long as the extra length of the center pin can be cut flush with the conductor side of the antenna (the cat face) before soldering. WEAR SAFETY GOGGLES. When cutting the excess center pin, the metal tends to launch outward.
 
