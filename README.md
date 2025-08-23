@@ -32,12 +32,12 @@ These antennas are modified oval patched on double-sided copper FR4 with permitt
 <div align="center">
 <table>
   <tr>
-    <td align="center"><img src="./media/cat_antennas/2400MHz_6000MHz.png" height="250"></td>
+    <td align="center"><img src="./media/cat_antennas/2400MHz_5800MHz.png" height="250"></td>
     <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_square.png" height="250"></td>
     <td align="center"><img src="./media/cat_antennas/5000MHz_6000MHz_round.png" height="250"></td>
   </tr>
   <tr>
-    <td align="center">S11 of 2.4 GHz and 6 GHz Design</td>
+    <td align="center">S11 of 2.4 GHz and 5.8 GHz Design</td>
     <td align="center">S11 of 5 GHz and 6 GHz Design, Square Ground Plane</td>
     <td align="center">S11 of 5 GHz and 6 GHz Design, Round Ground Plane</td>
   </tr>
@@ -46,7 +46,7 @@ These antennas are modified oval patched on double-sided copper FR4 with permitt
 
 All designs show strong consistency between samples. For comparison purposes, all samples were measured from 1 GHz to 8 GHz on a Keysight N5227B PNA Network Analyzer on the same 12-port. In the provided sample .csv files, ports 3 and 4 were used for measurements. S11 in this example is S33.  
 
-In the plot above on the left, the 2.4 GHz and 6 GHz frequencies are controllable and were designed in simulation. The additional resonances at 4.7 GHz and 7.9 GHz are not directly controllable, but are consistent. 
+In the plot above on the left, the 2.4 GHz and 5.8 GHz (or 6 GHz, it did trend a little high in this group) frequencies are controllable and were designed in simulation. The additional resonances at 4.7 GHz and 7.9 GHz are not directly controllable, but are consistent. 
 
 The center and the third plots are designed for dual-band 5 GHz and 6 GHz frequencies. The designs differ only in the shape of the substrate and ground plane (the ground plane fully covers the back of the substrate). The center plot uses the square ground plane; this design notably has a weaker lower frequency, which is consistent across the samples. This was noticed with the smaller cut of this particular design. The performance is improved with one of 2 changes: 1. extending the ground plane by at least several millimeters, OR 2. moving the probe location slightly to account for the smaller ground plane. 
 
@@ -80,6 +80,29 @@ The simulation results in the figure above (left) are the same as the recently (
 
 Gain measurement of the newly milled antennas is scheduled for late August in order to compare those results to the 2024 results featured in lit.
 
+
+**Build of materials & assembly suggestions:**
+
+The .DXF file for several of these designs is included in the `dxf_files\cat_antennas` file.
+
+
+* FR4
+  * Recommended: MG Chemicals 555 Copper Clad Board, Double Sided, 12" x 12", 1 oz Copper, 1/16" Thick, FR4 
+  * https://www.amazon.com/MG-Chemicals-Copper-Board-Double/dp/B008OAFNWS?th=1
+  * FR4 with a permittivity of ~4.4 was used in the simulation and design. We typically use this brand because it has been consistent in quality.
+* SMA connector
+  * Recommended: 25PCS SMA Female PCB Panel Edge Mount Plug with 4 Pins Stand Straight Connector RF Coax Coaxial Adapter 
+  * https://www.amazon.com/bnafes-Straight-Connector-Coaxial-Adapter/dp/B09N1RBBFX/ 
+  * Get the cheap, standard ones. 1 center pin, 4 ground pins either on the corners or placed for easy PCB mount. Remove the ground pins (use a pair of pliers and rolling motion) so that the center pin will go through the hole in the antenna design (the circle by the ear), and the outer connector of the SMA is flush against the ground plane.
+* 1/4th inch drill bit for a hand-held drill
+  * Recommended: DEWALT 21 -Piece Assorted x Titanium nitride coated HSS Jobber length Twist Drill Bit Set
+  * https://www.lowes.com/pd/DEWALT-21-Piece-Titanium-Twist-Drill-Bit-Set/1000438399
+  * This drill bit is used to drill the ground plane away from the center of the SMA connector so that there is no contact between the center pin and ground. The copper can be removed by hand, but the drill is fast and consistent. Do NOT drill deeply into the FR4.
+  * When selecting a drill bit, other sizes can be used as long as the ground (outside) of the SMA can be soldered to the ground plane of the antenna. 
+* Lead solder
+  * Any brand works. Lead will flow better and attach to the copper easier
+* A pair of side/diagonal cutters
+  * Any brand works as long as the extra length of the center pin can be cut flush with the conductor side of the antenna (the cat face) before soldering. WEAR SAFETY GOGGLES. When cutting the excess center pin, the metal tends to launch outward.
 
 
 
