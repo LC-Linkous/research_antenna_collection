@@ -15,7 +15,7 @@ Collected measurements and designs for antennas that have appeared in papers
 </p>
 
 
-These antennas are modified oval patched on double-sided copper FR4 with permittivity of ~4.4. They are designed to operate at two independent and tunable frequencies. 
+These antennas are modified oval patches on double-sided copper FR4 with permittivity of ~4.4. They are designed to operate at two independent and tunable frequencies. 
 
 **General design summary:**
 * Probe-fed design with full copper ground plane
